@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Deploy
 
-ng deploy --repo https://github.com/hrandika/hrandika.github.io.git --no-build  
+ng deploy --repo https://github.com/Techsfinity/techsfinity.github.io.git --no-build  
