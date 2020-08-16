@@ -1,5 +1,5 @@
 {
-  "name": "vloger",
+  "name": "techsfinity-website",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run vloger:serve-ssr",
-    "serve:ssr": "node dist/vloger/server/main.js",
-    "build:ssr": "ng build --prod && ng run vloger:server:production",
-    "prerender": "ng run vloger:prerender --routesFile routes.txt"
+    "dev:ssr": "ng run techsfinity-website:serve-ssr",
+    "serve:ssr": "node dist/techsfinity-website/server/main.js",
+    "build:ssr": "ng build --prod && ng run techsfinity-website:server:production",
+    "prerender": "ng run techsfinity-website:prerender --routesFile routes.txt"
   },
   "private": true,
   "dependencies": {

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "vloger": {
+    "techsfinity-website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/vloger/browser",
+            "outputPath": "dist/techsfinity-website/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -83,18 +83,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "vloger:build"
+            "browserTarget": "techsfinity-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "vloger:build:production"
+              "browserTarget": "techsfinity-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "vloger:build"
+            "browserTarget": "techsfinity-website:build"
           }
         },
         "test": {
@@ -131,18 +131,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "vloger:serve"
+            "devServerTarget": "techsfinity-website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "vloger:serve:production"
+              "devServerTarget": "techsfinity-website:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/vloger/server",
+            "outputPath": "dist/techsfinity-website/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -163,21 +163,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "vloger:build",
-            "serverTarget": "vloger:server"
+            "browserTarget": "techsfinity-website:build",
+            "serverTarget": "techsfinity-website:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "vloger:build:production",
-              "serverTarget": "vloger:server:production"
+              "browserTarget": "techsfinity-website:build:production",
+              "serverTarget": "techsfinity-website:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "vloger:build:production",
-            "serverTarget": "vloger:server:production",
+            "browserTarget": "techsfinity-website:build:production",
+            "serverTarget": "techsfinity-website:server:production",
             "routes": [
               "/"
             ]
@@ -193,7 +193,7 @@
       }
     }
   },
-  "defaultProject": "vloger",
+  "defaultProject": "techsfinity-website",
   "cli": {
     "analytics": false
   }
