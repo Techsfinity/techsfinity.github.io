@@ -30,6 +30,7 @@
             "extractCss": true,
             "styles": [
               "src/styles.scss",
+              "src/css/styles.css",
               {
                 "input": "node_modules/prismjs/themes/prism-okaidia.css",
                 "bundleName": "okaidia",
@@ -46,7 +47,8 @@
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/components/prism-java.min.js",
               "node_modules/prismjs/components/prism-kotlin.min.js",
-              "node_modules/prismjs/components/prism-typescript.min.js"
+              "node_modules/prismjs/components/prism-typescript.min.js",
+              "src/js/scripts.js"
             ]
           },
           "configurations": {
